@@ -48,9 +48,9 @@ public:
 // TODO: write code here:
 // evaluateCountdown FUNCTION
 double evaluateCountdown(const std::string &word){
-    std::vector<double> rpnStack;
-    std::stringstream ss(word);
-    std::string atom;
+    std::vector<double> rpnStack; //create a stack type structure using a vector
+    std::stringstream ss(word); //
+    std::string atom; //define a string atom - which will store the current value
 
     while (ss >> atom){
         if(atom == "+" || atom == "-" || atom == "*" || atom == "/"){
